@@ -8,11 +8,10 @@ const App = () => {
 
   const handleVideoLoaded = async (videoFile) => {
     setIsProcessing(true);
+    console.log("Hello");
     // Simulate processing delay
     setTimeout(() => {
-      setResult({
-        /* mock result data */
-      });
+      setResult("HELLO ");
       setIsProcessing(false);
     }, 2000);
   };
@@ -20,7 +19,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 via-pink-300 to-pink-400 p-4">
       <div className="bg-white shadow-2xl rounded-lg p-8 w-full max-w-4xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-6 text-pink-600 animate-bounce">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-6 text-pink-600 ">
           Women Safety Analytics – Protecting Women from Safety Threats
         </h1>
         <p className="text-center text-gray-700 mb-6 bg-pink-100 p-4 rounded-lg shadow-md">
